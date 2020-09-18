@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+
+        .header
+        {
+            text-align: center;
+        }
+
+        .form-row 
+        {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            
+        }
+        
+        .form-row > label
+        {
+            flex: 1;
+        }
+
+        .form-row > input,select,textarea
+        {
+            flex: 2;
+        }
+
+  
+
+    </style>
+    <title>Day 3</title>
+</head>
+<body>
+    <div class="header">
+        <h1>ข้อมูลนักเรียน</h1>
+    </div>
+    
+    <div class="body">
+        <form>
+            <fieldset>
+                <legend>Student Information</legend>
+                    <ul>
+                        <li class="form-row">
+                            <label>ชื่อ: </label><input type="text" id="fname" name="fname">
+                        </li>
+                        <br><br>
+
+                        <li class="form-row">
+                            <label>นามสกุล: </label><input type="text" id="lname" name="lname">
+                        </li>
+                            <br><br>
+                        
+                        <li class="form-row">
+                            <label>อายุ: </label><input type="number" id="age" name="age">
+                        </li>
+                        <br><br>
+
+                        <li class="form-row">
+                            <label>Date of birth: </label> <input type="date" id="birthday" name="birthday">
+                        </li>
+                        <br><br>
+
+                        <li class="form-row">
+                            <label>สีที่ชอบ: </label><input type="text" id="color" name="color">
+                        </li>
+                        <br><br>
+
+                        <li class="form-row">
+                            <label>เพศ: </label>
+                                <select name="gender" id="gender">
+                                    <option value="male">ชาย</option>
+                                    <option value="female">หญิง</option>
+                                    <option value="lgbt">เพศที่สาม</option>
+                                </select>
+                        </li>
+                        <br><br>
+
+                        <li class="form-row">
+                            <label>รูปประจำตัว: </label>
+                                <input type="file" id="img" name="img" accept="image/*">
+                        </li>
+                        <br><br>
+
+                        <li class="form-row">
+                            <lable>คติประจำใจ: </lable>
+                                <textarea id="motto" name="motto" rows="1" cols="20"></textarea>
+                        </li>
+                        <br><br>
+                        
+                        <li class="form-row">
+                            <input type="submit" value="Submit">
+                        </li>
+                    </ul>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
